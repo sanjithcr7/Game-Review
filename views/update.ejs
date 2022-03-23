@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <link rel="stylesheet" href="/stylesheets/update.css">
+</head>
+<body>
+    <div class="main">
+        <nav class="navbar"> 
+            <a href="/" class="navbartext">HOME</a>
+            <a href="/write" class="navbartext">POST</a>
+            <a href="/reviews" class="navbartext">REVIEWS</a>
+        </nav>
+
+        <div class="review-bar">
+            <form action="/update/<%= details._id %>" method="post">
+                <input type="text" class="input1" placeholder="Game Name" name="name" id="name" value="<%= details.name%>">
+                <div>
+                    <textarea name="review" id="review" cols="41" rows="10" class="review" name="review" placeholder="Write Your reviews........">
+                        <%= details.review %>
+                    </textarea>
+                </div>
+                <input type="submit" class="input3"> 
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>

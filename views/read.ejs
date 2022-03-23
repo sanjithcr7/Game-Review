@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVIEWS</title>
+    <link rel="stylesheet" href="/stylesheets/read.css">
+</head>
+<body>
+    <div class="upperPart">
+        <nav class="navbar">
+            <a href="/" class="navbartext">HOME</a>
+            <a href="/write" class="navbartext">POST</a>
+            <a href="/reviews" class="navbartext">REVIEWS</a>
+        </nav>
+     
+
+    </div>
+    
+    <div class="lowerPart">
+        <h2 class="headingre">Recent Reviews</h2>
+        <% data.forEach(details =>{ %>
+        <div class="reviews">
+            <h2 class="headtag"><%= details.name %></h2>
+            <span><%= details.review %></span>
+            <div class="buttons"><a href="/update/<%= details._id %>"><button class="ubutton">Update</button></a>
+            <a href="/delete/<%= details._id %>"><button class="rbutton"> Remove </button></a></div> 
+
+    
+        </div>
+
+        <% }) %>
+        
+
+        
+
+
+    </div>
+    
+</body>
+</html>

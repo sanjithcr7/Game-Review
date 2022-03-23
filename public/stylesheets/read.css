@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.upperPart{
+    background-image: url("/images/bg1.png");
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0,0.5);
+    background-blend-mode:overlay;
+    box-shadow: 0 5px 10px rgb(95 95 95);
+ 
+
+}
+.navbar{
+    float:right;
+    padding: 15px;
+    word-spacing: 10px;
+}
+.navbartext{
+    color: white;
+    text-decoration: none;
+}
+
+.reviews{
+    border-radius:5px;
+    background-color: #ffe8b8;
+    padding: 25px;
+    margin-top:30px;
+    
+
+}
+.ubutton{
+    
+    cursor: pointer;
+    padding: 6px;
+    color: white;
+    background-color: rgb(167, 115, 4);
+    border: none;
+    border-radius: 3px;
+
+}
+.rbutton{
+    
+    cursor: pointer;
+    padding: 6px;
+    color: white;
+    background-color: rgb(167, 9, 4);
+    border: none;
+    border-radius: 3px;
+
+}
+
+.lowerPart{
+   
+    padding: 55px;
+    
+ 
+    
+    
+}
+.headtag{
+    margin-bottom: 20px;
+}
+.buttons{
+    margin-top: 8px;
+}
